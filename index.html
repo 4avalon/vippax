@@ -1,0 +1,143 @@
+
+<-- 
+site modelo do cliente.
+https://www.shiftmc.com.br/index 
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VIPPAX - Transporte Executivo de Luxo</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Aqui adiciona o caminho correto -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>VIPPAX</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#frota">Frota</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h2>Luxo, conforto e pontualidade em seus traslados executivos</h2>
+            <p>Traslados para aeroportos e eventos em São Paulo</p>
+        </div>
+        <div class="hero-form">
+            <form id="agendamento-form">
+                <h3>Faça sua Reserva Agora</h3>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="origem">Origem:</label>
+                <input type="text" id="origem" name="origem" required>
+                
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" required>
+                
+                <label for="data">Data do Serviço:</label>
+                <input type="date" id="data" name="data" required>
+                
+                <label for="hora">Hora do Serviço:</label>
+                <input type="time" id="hora" name="hora" required>
+                
+                <button type="submit">Reservar Agora</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Traslado Aeroporto</h3>
+                <p>Transporte executivo para os aeroportos de Guarulhos e Congonhas.</p>
+            </div>
+            <div class="service-item">
+                <h3>Motorista Particular</h3>
+                <p>Serviço de motorista particular para rotinas ou eventos.</p>
+            </div>
+            <div class="service-item">
+                <h3>Pacotes por Hora ou Diária</h3>
+                <p>Serviços por horas ou pacotes diários para total conveniência.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frota Section -->
+    <section id="frota" class="fleet">
+        <h2>Nossa Frota</h2>
+        <p>Disponibilizamos um sedã de luxo para seus traslados.</p>
+        <img src="sedan-luxo.jpg" alt="Sedã de Luxo VIPPAX">
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about">
+        <h2>Sobre a VIPPAX</h2>
+        <p>A VIPPAX oferece serviços de transporte executivo de luxo, com foco em conforto, segurança e pontualidade.</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <h2>Novidades e Dicas</h2>
+        <article class="blog-post">
+            <h3>Dicas para Transporte Seguro em São Paulo</h3>
+            <p>Conheça as melhores práticas de segurança em traslados executivos.</p>
+            <a href="#">Leia mais</a>
+        </article>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <form id="contato-form">
+            <label for="contato-nome">Nome:</label>
+            <input type="text" id="contato-nome" name="contato-nome" required>
+            
+            <label for="contato-email">E-mail:</label>
+            <input type="email" id="contato-email" name="contato-email" required>
+            
+            <label for="contato-msg">Mensagem:</label>
+            <textarea id="contato-msg" name="contato-msg" required></textarea>
+            
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 VIPPAX - Todos os Direitos Reservados.</p>
+        <div class="social-media">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
