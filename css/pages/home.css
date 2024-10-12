@@ -1,0 +1,52 @@
+/* Home Section */
+#home {
+    background-image: url('../assets/images/driver.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ocupa a altura da tela inteira */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0; /* Texto claro */
+    text-align: center; /* Centraliza o texto */
+    padding: 0 20px; /* Adiciona um padding para evitar que o texto encoste nas bordas */
+}
+
+#home h2 {
+    font-size: 48px;
+    margin-bottom: 20px; /* Espaço entre o título e o parágrafo */
+}
+
+#home p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #home {
+        padding: 0 10px; /* Reduz o padding para telas menores */
+    }
+
+    #home h2 {
+        font-size: 32px; /* Reduz o tamanho da fonte do título para caber em smartphones */
+    }
+
+    #home p {
+        font-size: 18px; /* Reduz o tamanho da fonte do parágrafo */
+    }
+}
+
+@media (max-width: 480px) {
+    #home {
+        padding: 0 5px; /* Ajusta o padding para telas muito pequenas */
+    }
+
+    #home h2 {
+        font-size: 28px; /* Reduz ainda mais o tamanho da fonte em smartphones menores */
+    }
+
+    #home p {
+        font-size: 16px; /* Reduz o parágrafo para caber melhor */
+    }
+}

@@ -1,40 +1,43 @@
-
-<-- 
-site modelo do cliente.
-https://www.shiftmc.com.br/index 
--->
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- 
+    site modelo do cliente.
+    https://www.shiftmc.com.br/index 
+    -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>VIPPAX - Transporte Executivo de Luxo</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Aqui adiciona o caminho correto -->
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components/menu.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/pages/home.css"> <!-- Estilos específicos para a home -->
+
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>VIPPAX</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#frota">Frota</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Menu de Navegação -->
+<header class="menu" id="menu">
+    <div class="logo">
+        <h1>VIPPAX</h1>
+    </div>
+    <ul id="menu-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#frota">Frota</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div id="menu-icon" class="menu-icon">&#9776;</div> <!-- Ícone de hambúrguer -->
+</header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section id="home" class="hero">
+        <div class="hero-image">
+            <img src="assets/images/driver.jpg" alt="Motorista VIPPAX">
+        </div>
         <div class="hero-text">
             <h2>Luxo, conforto e pontualidade em seus traslados executivos</h2>
             <p>Traslados para aeroportos e eventos em São Paulo</p>
@@ -139,5 +142,9 @@ https://www.shiftmc.com.br/index
             <a href="#">LinkedIn</a>
         </div>
     </footer>
+
+    <!-- Importando o JavaScript -->
+    <script src="js/components/menu.js"></script>
+
 </body>
 </html>
