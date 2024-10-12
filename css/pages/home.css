@@ -1,52 +1,120 @@
-/* Home Section */
-#home {
-    background-image: url('../assets/images/driver.jpg'); /* Imagem de fundo */
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Ocupa a altura da tela inteira */
+/* ============================ */
+/*         Seção Home (Hero)     */
+/* ============================ */
+
+/* Estrutura geral da seção */
+.hero {
     display: flex;
+    height: 100vh; /* Altura total da tela */
     align-items: center;
+    justify-content: space-between; /* Distribui o conteúdo entre os lados */
+    background-color: #000; /* Fundo preto */
+    color: #f0f0f0; /* Texto branco */
+    position: relative;
+}
+
+/* Container da imagem, que ocupa todo o lado esquerdo */
+.hero-image {
+    position: relative;
+    flex: 1; /* Ocupa metade da tela */
+    height: 100%;
+     background-image: url('../../assets/images/driver.jpg');  /* Imagem de fundo */
+    background-size: cover; /* Cobre toda a área */
+    background-position: center;
+}
+
+/* Texto sobreposto à imagem, posicionado na parte inferior */
+.hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Fundo preto com transparência */
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+/* Formulário na parte direita */
+.hero-form {
+    flex: 1; /* Ocupa metade da tela */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    color: #f0f0f0; /* Texto claro */
-    text-align: center; /* Centraliza o texto */
-    padding: 0 20px; /* Adiciona um padding para evitar que o texto encoste nas bordas */
 }
 
-#home h2 {
-    font-size: 48px;
-    margin-bottom: 20px; /* Espaço entre o título e o parágrafo */
+.hero-form form {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    flex-direction: column;
 }
 
-#home p {
-    font-size: 20px;
-    margin-top: 10px;
+.hero-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #f0f0f0;
 }
 
-/* Responsividade para telas menores */
+.hero-form input,
+.hero-form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+.hero-form input {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco dos campos */
+}
+
+.hero-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-form button:hover {
+    background-color: #0056b3;
+}
+
+/* ============================ */
+/*         Responsividade        */
+/* ============================ */
+
+/* Ajustes para telas menores */
 @media (max-width: 768px) {
-    #home {
-        padding: 0 10px; /* Reduz o padding para telas menores */
+    .hero {
+        flex-direction: column-reverse; /* Empilha o formulário abaixo da imagem */
+        height: auto; /* Permite altura automática */
     }
 
-    #home h2 {
-        font-size: 32px; /* Reduz o tamanho da fonte do título para caber em smartphones */
+    .hero-image {
+        width: 100%; /* A imagem ocupará a largura total */
+        height: 50vh; /* Ocupa metade da altura da tela */
     }
 
-    #home p {
-        font-size: 18px; /* Reduz o tamanho da fonte do parágrafo */
-    }
-}
-
-@media (max-width: 480px) {
-    #home {
-        padding: 0 5px; /* Ajusta o padding para telas muito pequenas */
+    .hero-text {
+        position: static;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8); /* Fundo mais opaco em telas pequenas */
     }
 
-    #home h2 {
-        font-size: 28px; /* Reduz ainda mais o tamanho da fonte em smartphones menores */
-    }
-
-    #home p {
-        font-size: 16px; /* Reduz o parágrafo para caber melhor */
+    .hero-form {
+        width: 100%;
+        padding: 20px;
     }
 }

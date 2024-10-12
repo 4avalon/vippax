@@ -29,6 +29,8 @@ C:.
 ¦   ¦       menu.css
 ¦   ¦       
 ¦   +---pages
+¦           home.css
+¦           
 +---docs
 +---html
 +---js
