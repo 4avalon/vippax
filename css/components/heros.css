@@ -123,20 +123,24 @@
 
     /* Ajuste da imagem */
     .hero-image {
-        flex: none; /* Remove o comportamento flexível da imagem */
-        height: 300px; /* Define uma altura fixa para a imagem no mobile */
-        background-position: center;
-        background-size: cover; /* Garante que a imagem cubra o container */
+    flex: none  ;
+    height: 85vh;
+    background-image: url('../../assets/images/driver.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Parallax */
+    background-repeat: no-repeat;
+
+
     }
+
 
     /* Texto da hero (ajuste de tamanho) */
     .hero-text {
+        top: 30%;
         position: relative; /* Torna o posicionamento relativo no mobile */
-        bottom: 0;
-        left: 0;
-        right: 0;
         padding: 10px; /* Diminui o padding para telas menores */
         text-align: center;
+        align-items: center;
         background: none; /* Remove o fundo escuro no mobile para melhorar a leitura */
         color: #f8f9fa;
     }
@@ -144,11 +148,21 @@
     .hero-text h2 {
         font-size: 28px; /* Reduz o tamanho do título no mobile */
         margin-bottom: 8px;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 1); /* Sombra escura ao redor do texto */
+
     }
 
-    .hero-text p {
-        font-size: 16px; /* Reduz o tamanho do parágrafo no mobile */
+
+
+    .hero-text p {        
+        margin-bottom: 8px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); /* Sombra escura ao redor do texto */
+        background-color: rgba(0, 0, 0, 0.4);
+        font-size: 20px; /* Reduz o tamanho do parágrafo no mobile */
+        border-radius: 2%;
     }
+
+
 
     /* Formulário ajustado para mobile */
     .hero-form {
