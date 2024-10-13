@@ -121,17 +121,19 @@
         height: auto; /* Remove a altura fixa para telas menores */
     }
 
-    /* Ajuste da imagem */
+      /* Ajuste da imagem */
     .hero-image {
-    flex: none  ;
-    height: 85vh;
-    background-image: url('../../assets/images/driver.jpg');
-    background-size: cover;
-    background-attachment: fixed; /* Parallax */
-    background-repeat: no-repeat;
+        flex: none;
+        height: 85vh;
+        background-image: url('../../assets/images/driver.jpg');
+        background-size: cover;
+        background-attachment: fixed; /* Parallax */
+        background-repeat: no-repeat;
+    background-position: -150px -23px;
 
-
+      
     }
+
 
 
     /* Texto da hero (ajuste de tamanho) */
@@ -149,6 +151,8 @@
         font-size: 28px; /* Reduz o tamanho do título no mobile */
         margin-bottom: 8px;
         text-shadow: 1px 1px 6px rgba(0, 0, 0, 1); /* Sombra escura ao redor do texto */
+        line-height: 2; /* Ajusta o espaçamento entre as linhas de texto */
+
 
     }
 
@@ -160,6 +164,7 @@
         background-color: rgba(0, 0, 0, 0.4);
         font-size: 20px; /* Reduz o tamanho do parágrafo no mobile */
         border-radius: 2%;
+        line-height: 1.5; /* Ajusta o espaçamento entre as linhas de texto */
     }
 
 
