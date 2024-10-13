@@ -22,12 +22,12 @@ function smoothScrollFixedTime(targetPosition) {
     window.requestAnimationFrame(step);
 }
 
-// Ativa a rolagem suave para cada link
-document.querySelectorAll('#menu-list li a').forEach(function(link) {
+// Ativa a rolagem suave para cada link do menu
+document.querySelectorAll('.menu ul li a').forEach(function(link) {
     link.addEventListener('click', function(event) {
         event.preventDefault();
         const section = document.querySelector(this.getAttribute('href'));
-        const sectionPosition = section.offsetTop;
-        smoothScrollFixedTime(sectionPosition);
+        const sectionPosition = section.offsetTop; // Posição da seção
+        smoothScrollFixedTime(sectionPosition); // Chama a função de rolagem
     });
 });
