@@ -106,3 +106,79 @@
 .hero-form button:hover {
     background-color: #0056b3;
 }
+
+/* ============================ */
+/*     Responsividade (Mobile)   */
+/* ============================ */
+
+@media (max-width: 768px) {
+
+    /* Ajustes gerais da seção hero */
+    .hero {
+        flex-direction: column; /* Empilha o conteúdo verticalmente */
+        align-items: center; /* Centraliza o conteúdo no eixo vertical */
+        padding: 20px; /* Ajusta o padding para ser mais adequado ao mobile */
+        height: auto; /* Remove a altura fixa para telas menores */
+    }
+
+    /* Ajuste da imagem */
+    .hero-image {
+        flex: none; /* Remove o comportamento flexível da imagem */
+        height: 300px; /* Define uma altura fixa para a imagem no mobile */
+        background-position: center;
+        background-size: cover; /* Garante que a imagem cubra o container */
+    }
+
+    /* Texto da hero (ajuste de tamanho) */
+    .hero-text {
+        position: relative; /* Torna o posicionamento relativo no mobile */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px; /* Diminui o padding para telas menores */
+        text-align: center;
+        background: none; /* Remove o fundo escuro no mobile para melhorar a leitura */
+        color: #f8f9fa;
+    }
+
+    .hero-text h2 {
+        font-size: 28px; /* Reduz o tamanho do título no mobile */
+        margin-bottom: 8px;
+    }
+
+    .hero-text p {
+        font-size: 16px; /* Reduz o tamanho do parágrafo no mobile */
+    }
+
+    /* Formulário ajustado para mobile */
+    .hero-form {
+        flex: none;
+        width: 100%; /* O formulário ocupará toda a largura no mobile */
+        max-width: none; /* Remove o limite de largura */
+        padding: 20px;
+        margin-top: 20px; /* Adiciona uma margem superior */
+        height: auto; /* Remove a altura fixa para o mobile */
+        overflow-y: visible; /* Remove a rolagem vertical */
+    }
+
+    /* Ajuste de altura e layout do formulário */
+    .hero-form form {
+        height: auto; /* Ajusta a altura do formulário no mobile */
+        padding: 15px;
+    }
+
+    .hero-form label {
+        font-size: 14px; /* Diminui o tamanho do texto no mobile */
+    }
+
+    .hero-form input,
+    .hero-form button {
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 14px; /* Ajusta o tamanho da fonte para inputs e botão */
+    }
+
+    .hero-form button {
+        font-size: 16px; /* Botão com um tamanho de fonte maior */
+    }
+}
