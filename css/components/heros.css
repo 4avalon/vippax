@@ -24,7 +24,7 @@
     height: 100vh;
     background-image: url('../../assets/images/driver.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: calc(50% - 20px) calc(50% + 110px);
     background-attachment: fixed; /* Parallax */
     background-repeat: no-repeat;
 }
@@ -129,7 +129,7 @@
         background-size: cover;
         background-attachment: fixed; /* Parallax */
         background-repeat: no-repeat;
-    background-position: -150px -23px;
+        background-position: -150px -23px;
 
       
     }
