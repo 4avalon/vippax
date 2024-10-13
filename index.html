@@ -17,24 +17,25 @@
 
 </head>
 <body>
-    <!-- Menu de Navegação -->
-<header class="menu" id="menu">
-    <div class="logo">
-        <h1>VIPPAX</h1>
-    </div>
-    <ul id="menu-list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#frota">Frota</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contato">Contato</a></li>
-    </ul>
-    <div id="menu-icon" class="menu-icon">&#9776;</div> <!-- Ícone de hambúrguer -->
-</header>
+    <!-- Faixa preta com logo VIPPAX sempre visível -->
+    <header class="logo">
+        <img src="assets/images/logo-vippax.png" alt="Logo VIPPAX">
+    </header>
 
-        <!-- Hero Section -->
-       <section id="home" class="hero">
+    <!-- Menu inicialmente invisível -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#frota">Frota</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
     <!-- Imagem à esquerda com o texto sobreposto na parte inferior -->
     <div class="hero-image">
         <div class="hero-text">
@@ -76,80 +77,77 @@
     </div>
 </section>
 
-
-
-
-    <!-- Serviços Section -->
-    <section id="servicos" class="services">
-        <h2>Nossos Serviços</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <h3>Traslado Aeroporto</h3>
-                <p>Transporte executivo para os aeroportos de Guarulhos e Congonhas.</p>
-            </div>
-            <div class="service-item">
-                <h3>Motorista Particular</h3>
-                <p>Serviço de motorista particular para rotinas ou eventos.</p>
-            </div>
-            <div class="service-item">
-                <h3>Pacotes por Hora ou Diária</h3>
-                <p>Serviços por horas ou pacotes diários para total conveniência.</p>
-            </div>
+<!-- Serviços Section -->
+<section id="servicos" class="services">
+    <h2>Nossos Serviços</h2>
+    <div class="service-list">
+        <div class="service-item">
+            <h3>Traslado Aeroporto</h3>
+            <p>Transporte executivo para os aeroportos de Guarulhos e Congonhas.</p>
         </div>
-    </section>
-
-    <!-- Frota Section -->
-    <section id="frota" class="fleet">
-        <h2>Nossa Frota</h2>
-        <p>Disponibilizamos um sedã de luxo para seus traslados.</p>
-        <img src="sedan-luxo.jpg" alt="Sedã de Luxo VIPPAX">
-    </section>
-
-    <!-- Sobre Section -->
-    <section id="sobre" class="about">
-        <h2>Sobre a VIPPAX</h2>
-        <p>A VIPPAX oferece serviços de transporte executivo de luxo, com foco em conforto, segurança e pontualidade.</p>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <h2>Novidades e Dicas</h2>
-        <article class="blog-post">
-            <h3>Dicas para Transporte Seguro em São Paulo</h3>
-            <p>Conheça as melhores práticas de segurança em traslados executivos.</p>
-            <a href="#">Leia mais</a>
-        </article>
-    </section>
-
-    <!-- Contato Section -->
-    <section id="contato" class="contact">
-        <h2>Contato</h2>
-        <form id="contato-form">
-            <label for="contato-nome">Nome:</label>
-            <input type="text" id="contato-nome" name="contato-nome" required>
-            
-            <label for="contato-email">E-mail:</label>
-            <input type="email" id="contato-email" name="contato-email" required>
-            
-            <label for="contato-msg">Mensagem:</label>
-            <textarea id="contato-msg" name="contato-msg" required></textarea>
-            
-            <button type="submit">Enviar Mensagem</button>
-        </form>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 VIPPAX - Todos os Direitos Reservados.</p>
-        <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
+        <div class="service-item">
+            <h3>Motorista Particular</h3>
+            <p>Serviço de motorista particular para rotinas ou eventos.</p>
         </div>
-    </footer>
+        <div class="service-item">
+            <h3>Pacotes por Hora ou Diária</h3>
+            <p>Serviços por horas ou pacotes diários para total conveniência.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Importando o JavaScript -->
-    <script src="js/components/menu.js"></script>
+<!-- Frota Section -->
+<section id="frota" class="fleet">
+    <h2>Nossa Frota</h2>
+    <p>Disponibilizamos um sedã de luxo para seus traslados.</p>
+    <img src="sedan-luxo.jpg" alt="Sedã de Luxo VIPPAX">
+</section>
+
+<!-- Sobre Section -->
+<section id="sobre" class="about">
+    <h2>Sobre a VIPPAX</h2>
+    <p>A VIPPAX oferece serviços de transporte executivo de luxo, com foco em conforto, segurança e pontualidade.</p>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="blog">
+    <h2>Novidades e Dicas</h2>
+    <article class="blog-post">
+        <h3>Dicas para Transporte Seguro em São Paulo</h3>
+        <p>Conheça as melhores práticas de segurança em traslados executivos.</p>
+        <a href="#">Leia mais</a>
+    </article>
+</section>
+
+<!-- Contato Section -->
+<section id="contato" class="contact">
+    <h2>Contato</h2>
+    <form id="contato-form">
+        <label for="contato-nome">Nome:</label>
+        <input type="text" id="contato-nome" name="contato-nome" required>
+        
+        <label for="contato-email">E-mail:</label>
+        <input type="email" id="contato-email" name="contato-email" required>
+        
+        <label for="contato-msg">Mensagem:</label>
+        <textarea id="contato-msg" name="contato-msg" required></textarea>
+        
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 VIPPAX - Todos os Direitos Reservados.</p>
+    <div class="social-media">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+    </div>
+</footer>
+
+<!-- Importando o JavaScript -->
+<script src="js/components/menu.js"></script>
 
 </body>
 </html>

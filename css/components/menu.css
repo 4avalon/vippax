@@ -1,31 +1,73 @@
-/* ========================== */
-/*       1. Menu de Navegação   */
-/* ========================== */
+/* ============================ */
+/*       Faixa da Logo VIPPAX    */
+/* ============================ */
 
-.menu {
-    background-color: rgba(0, 0, 0, 0.4); /* Fundo preto levemente transparente */
-    padding: 20px;
-    position: absolute;
+/* Faixa preta fixa para a logo VIPPAX, sempre visível */
+.logo {
+    background-color: black; /* Fundo preto sólido */
+    text-align: center;
+    padding: 20px 0;
     width: 100%;
+    position: fixed; /* Fixa no topo */
     top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000; /* Alta prioridade para ficar acima do conteúdo */
 }
 
-/* ========================== */
-/*     2. Itens do Menu        */
-/* ========================== */
+/* Ajuste da logo */
+.logo img {
+    max-width: 200px; /* Tamanho ajustado da logo */
+}
+
+/* Espaço abaixo da logo para evitar que o conteúdo sobreponha */
+body {
+    padding-top: 80px; /* Espaço criado abaixo da logo */
+}
+
+/* ============================ */
+/*       Menu de Navegação       */
+/* ============================ */
+
+/* Menu inicialmente invisível, logo abaixo da faixa da logo */
+.menu {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo translúcido */
+    padding: 20px;
+    position: absolute; /* Posicionado abaixo da logo */
+    width: 100%;
+    top: 60px; /* Alinhado logo abaixo da logo */
+    z-index: 999; /* Abaixo da logo, mas acima do conteúdo */
+    opacity: 0; /* Invisível no início */
+    transform: translateY(-100%); /* Empurrado para cima (fora da tela) */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Menu ao rolar a página */
+.menu.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro ao rolar */
+    backdrop-filter: blur(10px);  /* Efeito de desfoque no fundo */
+    position: fixed; /* Fixar o menu ao rolar */
+    top: 60px; /* Mantido logo abaixo da faixa da logo */
+    width: 100%;
+    padding: 10px 20px;
+    opacity: 1; /* Torna-se visível */
+    transform: translateY(0); /* Desce suavemente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* ============================ */
+/*       Itens do Menu           */
+/* ============================ */
 
 .menu ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-top: 20px; /* Espaço acima do menu */
 }
 
 .menu ul li a {
     text-decoration: none;
-    color: #f0f0f0; /* Texto branco claro */
+    color: #f0f0f0; /* Texto branco */
     font-size: 25px;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
@@ -36,86 +78,17 @@
     color: #007bff; /* Cor azul ao passar o mouse */
 }
 
-/* ========================== */
-/*     3. Menu ao Rolar        */
-/* ========================== */
-
-.menu.scrolled {
-    background-color: rgba(0, 0, 0, 0.8);  /* Fundo preto um pouco mais transparente ao rolar */
-    backdrop-filter: blur(10px);  /* Efeito de desfoque no fundo */
-    position: fixed;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-}
-
-.menu.scrolled ul li a {
-    color: #fff; /* Mantemos o texto branco mesmo ao rolar */
-    text-shadow: none;
-}
-
-/* ========================== */
-/*     4. Ícone do Menu Mobile */
-/* ========================== */
-
-.menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    position: fixed;
-    right: 20px;
-    top: 15px;
-    color: #f0f0f0; /* Texto branco */
-    transition: transform 0.3s ease;
-}
-
-/* Quando o menu está aberto, o ícone muda para o 'X' */
-.menu-icon.open {
-    color: rgba(255, 255, 255, 0.8); /* Cor branca suave para o 'X' */
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo transparente fosco para o ícone 'X' */
-    backdrop-filter: blur(10px); /* Efeito fosco no fundo */
-    border-radius: 50%; /* Efeito circular no fundo */
-}
-
-/* ========================== */
-/*    5. Menu Mobile           */
-/* ========================== */
+/* ============================ */
+/*     Responsividade (Mobile)   */
+/* ============================ */
 
 @media (max-width: 768px) {
     .menu ul {
-        display: none; /* Escondido inicialmente */
-    }
-
-    .menu ul.active {
-        display: flex; /* Mostra o menu quando a classe 'active' está presente */
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);  /* Fundo preto translúcido */
-        position: fixed;
-        top: 50px;
-        right: 0;
-        width: 90%;
-        z-index: 1000;
-        padding-top: 10px;
-        transform: translateY(0);  /* Animação suave */
-        opacity: 1;  /* Aparece suavemente */
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-
-    .menu ul li {
-        margin: 10px 0;
+        gap: 15px;
     }
 
     .menu ul li a {
         font-size: 20px;
-        color: #f0f0f0;  /* Mantém o texto branco no mobile */
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
-        padding: 10px;
-        transition: background-color 0.3s ease;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .menu-icon {
-        display: block;
     }
 }

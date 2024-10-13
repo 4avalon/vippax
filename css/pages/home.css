@@ -2,28 +2,31 @@
 /*         Seção Home (Hero)     */
 /* ============================ */
 
-/* Estrutura geral da seção */
 .hero {
     display: flex;
-    height: 100vh; /* Altura total da tela */
-    align-items: center;
-    justify-content: space-between; /* Distribui o conteúdo entre os lados */
+    height: 90vh; /* Altura total da tela em telas grandes */
+    align-items: flex-end;
+    justify-content: space-between;
     background-color: #000; /* Fundo preto */
-    color: #f0f0f0; /* Texto branco */
+    color: #f0f0f0;
     position: relative;
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a área visível */
+    min-height: 80vh; /* Altura mínima para evitar o espaço vazio */
 }
 
-/* Container da imagem, que ocupa todo o lado esquerdo */
+/* Container da imagem */
 .hero-image {
     position: relative;
-    flex: 1; /* Ocupa metade da tela */
-    height: 100%;
-     background-image: url('../../assets/images/driver.jpg');  /* Imagem de fundo */
-    background-size: cover; /* Cobre toda a área */
+    flex: 1;
+    height: 100vh;
+    background-image: url('../../assets/images/driver.jpg');
+    background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* Parallax */
+    background-repeat: no-repeat;
 }
 
-/* Texto sobreposto à imagem, posicionado na parte inferior */
+/* Texto sobreposto à imagem */
 .hero-text {
     position: absolute;
     bottom: 0;
@@ -40,19 +43,24 @@
     margin-bottom: 10px;
 }
 
-.hero-text p {
-    font-size: 18px;
-}
-
 /* Formulário na parte direita */
 .hero-form {
-    flex: 1; /* Ocupa metade da tela */
-    padding: 40px;
+    
+    flex-wrap: wrap;
+    flex: 0.5; /* Ocupa menos espaço */
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    max-width: 350px; /* Define uma largura máxima para o formulário */
+    margin-top: 0; /* Remove a margem superior */
+    height: 100%; /* Ajuste para ocupar toda a altura disponível */
+
+    overflow-y: auto; /* Adiciona barra de rolagem vertical, se necessário */
 }
 
+
+/* Ajuste adicional de altura e largura do formulário */
 .hero-form form {
     background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
     padding: 20px;
@@ -60,6 +68,8 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* O formulário ocupará toda a altura disponível */
 }
 
 .hero-form label {
@@ -70,15 +80,15 @@
 
 .hero-form input,
 .hero-form button {
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 8px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: none;
     width: 100%;
 }
 
 .hero-form input {
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco dos campos */
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-form button {
@@ -91,30 +101,3 @@
     background-color: #0056b3;
 }
 
-/* ============================ */
-/*         Responsividade        */
-/* ============================ */
-
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column-reverse; /* Empilha o formulário abaixo da imagem */
-        height: auto; /* Permite altura automática */
-    }
-
-    .hero-image {
-        width: 100%; /* A imagem ocupará a largura total */
-        height: 50vh; /* Ocupa metade da altura da tela */
-    }
-
-    .hero-text {
-        position: static;
-        padding: 20px;
-        background: rgba(0, 0, 0, 0.8); /* Fundo mais opaco em telas pequenas */
-    }
-
-    .hero-form {
-        width: 100%;
-        padding: 20px;
-    }
-}
