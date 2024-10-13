@@ -1,0 +1,59 @@
+/* ============================ */
+/*     Responsividade (Mobile)   */
+/* ============================ */
+
+@media (max-width: 768px) {
+
+    .menu {
+        position: fixed;
+        top: 65px; /* Alinhado abaixo da logo */
+        left: 0;
+        width: 100%;
+ 
+        overflow-y: auto; /* Se o conteúdo for maior que a altura, habilita a rolagem */
+        background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+        flex-direction: column;
+        justify-content: flex-start; /* Alinha os itens ao topo */
+        padding: 20px 0;
+        display: none; /* Oculto inicialmente */
+        opacity: 1;
+        transform: none; /* Remove as transformações de rolagem */
+    }
+
+    .menu.active {
+        display: flex; /* Mostra o menu ao ativar */
+    }
+
+    .menu-icon {
+        display: block; /* Mostra o ícone de hambúrguer apenas em telas menores */
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+    }
+
+    /* Transforma o ícone de hambúrguer em "X" ao abrir o menu */
+    .menu-icon.open {
+        transform: rotate(45deg); /* Rotação para dar o efeito de 'X' */
+        color: #ff4b5c; /* Cor do 'X' */
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 0 20px; /* Espaço interno nas laterais */
+    }
+
+    .menu ul li a {
+        font-size: 20px;
+        padding: 10px 0; /* Espaçamento vertical entre os links */
+    }
+
+
+}
+
+}

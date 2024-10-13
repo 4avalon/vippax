@@ -2,11 +2,12 @@
 /*       Rodapé do Site        */
 /* ========================== */
 
+/* Footer */
 footer {
-    background-color: #000;
+    background-color: #000; /* Mantém o fundo preto */
     padding: 20px;
     text-align: center;
-    color: #fff;
+    color: #fff; /* Texto branco */
 }
 
 footer p {
@@ -20,5 +21,5 @@ footer .social-media a {
 }
 
 footer .social-media a:hover {
-    color: #007bff;
+    color: #007bff; /* Muda a cor no hover */
 }

@@ -178,24 +178,3 @@ body {
     background-color: #0056b3;
 }
 
-/* Footer */
-footer {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-footer .social-media a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-footer .social-media a:hover {
-    color: #007bff;
-}

@@ -26,17 +26,17 @@ C:.
 ¦   ¦   styles.css
 ¦   ¦   
 ¦   +---components
+¦   ¦       footer.css
+¦   ¦       forms.css
+¦   ¦       heros.css
 ¦   ¦       menu.css
 ¦   ¦       
 ¦   +---pages
-¦           home.css
-¦           
 +---docs
 +---html
 +---js
     +---components
             menu.js
-            menu2.js
             menuSmoothScrollEffect1.js
             menuSmoothScrollFixedTime.js
             
