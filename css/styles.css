@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 16px; /* Ou o tamanho que preferir */
+}
+
 
 body {
     font-family: 'Arial', sans-serif;

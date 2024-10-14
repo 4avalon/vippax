@@ -5,11 +5,11 @@
 /* Faixa preta fixa para a logo VIPPAX, sempre visível */
 .logo {
     background-color: black; /* Fundo preto sólido */
+    height: 40px;
     text-align: center;
-    padding: 20px 0;
+
     width: 100%;
     position: fixed; /* Fixa no topo */
-    top: 0;
     z-index: 1000; /* Alta prioridade para ficar acima do conteúdo */
 }
 
@@ -19,9 +19,7 @@
 }
 
 /* Espaço abaixo da logo para evitar que o conteúdo sobreponha */
-body {
-    padding-top: 80px; /* Espaço criado abaixo da logo */
-}
+
 
 /* ============================ */
 /*       Menu de Navegação       */
@@ -30,10 +28,10 @@ body {
 /* Menu inicialmente invisível, logo abaixo da faixa da logo */
 .menu {
     background-color: rgba(0, 0, 0, 0.6); /* Fundo translúcido */
-    padding: 20px;
+
     position: absolute; /* Posicionado abaixo da logo */
     width: 100%;
-    top: 60px; /* Alinhado logo abaixo da logo */
+    top: 40px; /* Alinhado logo abaixo da logo */
     z-index: 999; /* Abaixo da logo, mas acima do conteúdo */
     opacity: 0; /* Invisível no início */
     transform: translateY(-100%); /* Empurrado para cima (fora da tela) */
@@ -57,9 +55,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro ao rolar */
     backdrop-filter: blur(10px);  /* Efeito de desfoque no fundo */
     position: fixed; /* Fixar o menu ao rolar */
-    top: 60px; /* Mantido logo abaixo da faixa da logo */
     width: 100%;
-    padding: 10px 20px;
     opacity: 1; /* Torna-se visível */
     transform: translateY(0); /* Desce suavemente */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
@@ -74,7 +70,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 20px; /* Espaço acima do menu */
+    margin-top: 10px; /* Espaço acima do menu */
 }
 
 .menu ul li a {
