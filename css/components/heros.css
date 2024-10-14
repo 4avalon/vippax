@@ -10,7 +10,7 @@
     background-color: #000; /* Fundo preto */
     background-size: cover;
     background-position: center;
-    height: 90vh; /* Altura de 90% da tela */
+    height: 100vh; /* Altura de 90% da tela */
     color: #f0f0f0;
     position: relative;
     overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a área visível */
@@ -27,6 +27,11 @@
     background-position: calc(50% - 20px) calc(50% + 110px);
     background-attachment: fixed; /* Parallax */
     background-repeat: no-repeat;
+    transition: background-position 30s ease-in; /* Aplica a transição para background-position */
+}
+.hero-image:hover {
+    background-position: calc(50% - 35px) calc(50% + 75px);
+
 }
 
 /* Texto sobreposto à imagem */
@@ -39,6 +44,13 @@
     background: rgba(0, 0, 0, 0.6); /* Fundo preto com transparência */
     color: #f0f0f0;
     text-align: center;
+    transform: scale(1.00);
+    transition: transform 0.9s ease-in; /* Transição mais suave na saída */
+}
+.hero-text:hover {
+    transform: scale(1.005);
+    transition: transform 0.9s ease-in; /* Transição mais suave na saída */
+
 }
 
 .hero-text h2 {
@@ -56,7 +68,7 @@
 /* Formulário na parte direita */
 .hero-form {
     flex: 0.5; /* Ocupa metade do espaço */
-    padding: 28px 18px 18px 18px;
+    padding: 68px 18px 18px 18px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

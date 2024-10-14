@@ -30,8 +30,15 @@ C:.
 ¦   ¦       forms.css
 ¦   ¦       heros.css
 ¦   ¦       menu.css
+¦   ¦       menuResponsive.css
 ¦   ¦       
 ¦   +---pages
+¦           about.css
+¦           blog.css
+¦           contact.css
+¦           fleet.css
+¦           services.css
+¦           
 +---docs
 +---html
 +---js

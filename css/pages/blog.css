@@ -1,0 +1,37 @@
+/* Blog Section */
+.blog {
+    padding: 50px;
+    background-color: #000;
+    color: #f0f0f0;
+}
+
+.blog h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-post {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    color: #ccc;
+}
+
+.blog-post a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    color: #0056b3;
+}

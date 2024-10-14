@@ -5,9 +5,11 @@
 /* Faixa preta fixa para a logo VIPPAX, sempre visível */
 .logo {
     background-color: black; /* Fundo preto sólido */
-    height: 40px;
+    height: 80px;
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
     text-align: center;
-
+    align-items: center; /* Centraliza verticalmente */
     width: 100%;
     position: fixed; /* Fixa no topo */
     z-index: 1000; /* Alta prioridade para ficar acima do conteúdo */
@@ -15,8 +17,19 @@
 
 /* Ajuste da logo */
 .logo img {
-    max-width: 200px; /* Tamanho ajustado da logo */
+    max-width: 140px; /* Tamanho ajustado da logo */
+    transform: scale(1);
+    transition: transform 30s ease-in; /* Transição mais suave na saída */
 }
+
+
+.logo img:hover {
+    transform: scale(1.25);
+    transition: transform 30s ease-in; /* Transição mais rápida na entrada */
+}
+
+
+
 
 /* Espaço abaixo da logo para evitar que o conteúdo sobreponha */
 
@@ -31,7 +44,7 @@
 
     position: absolute; /* Posicionado abaixo da logo */
     width: 100%;
-    top: 40px; /* Alinhado logo abaixo da logo */
+    top: 80px; /* Alinhado logo abaixo da logo */
     z-index: 999; /* Abaixo da logo, mas acima do conteúdo */
     opacity: 0; /* Invisível no início */
     transform: translateY(-100%); /* Empurrado para cima (fora da tela) */
