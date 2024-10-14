@@ -24,8 +24,8 @@
 
 
 .logo img:hover {
-    transform: scale(1.25);
-    transition: transform 30s ease-in; /* Transição mais rápida na entrada */
+    transform: scale(1.35);
+    transition: transform 40s ease-in; /* Transição mais rápida na entrada */
 }
 
 
@@ -41,7 +41,11 @@
 /* Menu inicialmente invisível, logo abaixo da faixa da logo */
 .menu {
     background-color: rgba(0, 0, 0, 0.6); /* Fundo translúcido */
-
+    height: 60px;
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center;
+    align-items: center; /* Centraliza verticalmente */
     position: absolute; /* Posicionado abaixo da logo */
     width: 100%;
     top: 80px; /* Alinhado logo abaixo da logo */
