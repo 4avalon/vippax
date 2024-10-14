@@ -27,11 +27,6 @@
     background-position: calc(50% - 20px) calc(50% + 110px);
     background-attachment: fixed; /* Parallax */
     background-repeat: no-repeat;
-    transition: background-position 30s ease-in; /* Aplica a transição para background-position */
-}
-.hero-image:hover {
-    background-position: calc(50% - 35px) calc(50% + 75px);
-
 }
 
 /* Texto sobreposto à imagem */
