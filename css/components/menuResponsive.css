@@ -9,7 +9,7 @@
         top: 65px; /* Alinhado abaixo da logo */
         left: 0;
         width: 100%;
- 
+        height: auto;
         overflow-y: auto; /* Se o conteúdo for maior que a altura, habilita a rolagem */
         background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
         flex-direction: column;
@@ -52,8 +52,4 @@
         font-size: 20px;
         padding: 10px 0; /* Espaçamento vertical entre os links */
     }
-
-
-}
-
 }
