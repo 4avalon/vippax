@@ -8,7 +8,7 @@ footer {
     padding: 20px;
     text-align: center;
     color: #fff; /* Texto branco */
-    min-height: 13vh;
+    min-height: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* Alinha verticalmente */
