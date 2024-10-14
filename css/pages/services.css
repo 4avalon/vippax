@@ -2,6 +2,8 @@
 .services {
     padding: 50px;
     background-color: #111;
+    min-height: 50vh; /* Altura de 90% da tela */
+
 }
 
 .services h2 {
@@ -19,8 +21,8 @@
 
 .service-item {
     background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 40px;
+    border-radius: 15px;
     width: 30%;
     transition: transform 0.3s;
 }

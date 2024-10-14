@@ -21,6 +21,7 @@ C:.
 ¦   +---images
 ¦           driver.jpg
 ¦           driver.webp
+¦           logo.jpg
 ¦           
 +---css
 ¦   ¦   styles.css

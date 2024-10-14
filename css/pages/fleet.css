@@ -1,7 +1,12 @@
 /* Fleet Section */
 .fleet {
-    padding: 50px;
-    background-color: #000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center; /* Alinha horizontalmente */
+    min-height: 50vh; /* Define a altura da seção como a altura da tela */
+    background-color: #000; /* Mantém o fundo preto */
     text-align: center;
 }
 

@@ -1,8 +1,13 @@
 /* About Section */
 .about {
-    padding: 50px;
+
     background-color: #111;
     color: #f0f0f0;
+    min-height: 50vh; /* Altura de 90% da tela */
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center;
+    align-items: center; /* Centraliza verticalmente */
 }
 
 .about h2 {
