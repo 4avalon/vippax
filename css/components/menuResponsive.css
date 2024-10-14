@@ -11,7 +11,7 @@
         width: 100%;
         height: auto;
         overflow-y: auto; /* Se o conteúdo for maior que a altura, habilita a rolagem */
-        background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+        background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
         flex-direction: column;
         justify-content: flex-start; /* Alinha os itens ao topo */
         padding: 20px 0;
