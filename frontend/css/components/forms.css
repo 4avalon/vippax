@@ -1,0 +1,150 @@
+/* ========================== */
+/*       Estilos dos Formulários        */
+/* ========================== */
+
+/* Formulário na parte direita */
+.hero-form {
+    flex: 0.5;
+    padding: 68px 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 380px;
+    margin-top: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.hero-form form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transform: scale(0.98);
+}
+.hero-form form input:hover {
+    transform: scale(1.015);
+}
+
+.hero-form form h3 {
+    font-size: 20px;
+}
+
+.hero-form label {
+    font-size: 16px;
+
+    color: #f0f0f0;
+}
+
+
+.hero-form input,
+.hero-form button,
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.hero-form input,
+form input,
+form select {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero-form button,
+form button {
+    background-color: #0269fe;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    letter-spacing: 1px;
+}
+
+.hero-form button:hover,
+form button:hover {
+    background-color: #0050e2;
+    transform: scale(1.03);
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    max-width: 420px;
+}
+
+/* Estilo para o campo de e-mail */
+input[type="email"] {
+    font-size: 15px;
+}
+
+/* Estilo para o checkbox e label */
+.checkbox-termos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-termos label {
+    font-size: 10px;
+    color: #eee;
+    transition: all 0.3s;
+}
+
+.checkbox-termos label:hover {
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 1);
+    transform: scale(1.02);
+}
+
+.checkbox-termos input[type="checkbox"] {
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* Formulário ajustado para mobile */
+    .hero-form {
+        flex: none;
+        width: 100%; /* O formulário ocupará toda a largura no mobile */
+        max-width: none; /* Remove o limite de largura */
+        padding: 20px;
+        margin-top: 20px; /* Adiciona uma margem superior */
+        height: auto; /* Remove a altura fixa para o mobile */
+        overflow-y: visible; /* Remove a rolagem vertical */
+    }
+
+    /* Ajuste de altura e layout do formulário */
+    .hero-form form {
+        height: auto; /* Ajusta a altura do formulário no mobile */
+        padding: 15px;
+    }
+
+    .hero-form label {
+        font-size: 14px; /* Diminui o tamanho do texto no mobile */
+    }
+
+    .hero-form input,
+    .hero-form button {
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 14px; /* Ajusta o tamanho da fonte para inputs e botão */
+    }
+
+    .hero-form button {
+        font-size: 16px; /* Botão com um tamanho de fonte maior */
+    }
+}

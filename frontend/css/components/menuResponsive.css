@@ -1,0 +1,56 @@
+/* ============================ */
+/*     Responsividade (Mobile)   */
+/* ============================ */
+
+@media (max-width: 768px) {
+
+    .menu {
+        position: fixed;
+        top: 80px; /* Alinhado abaixo da logo */
+        left: 0;
+        width: 100%;
+        height: auto;
+        overflow-y: auto; /* Se o conteúdo for maior que a altura, habilita a rolagem */
+        background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+        flex-direction: column;
+        justify-content: flex-start; /* Alinha os itens ao topo */
+        padding: 20px 20px;
+        display: none; /* Oculto inicialmente */
+        opacity: 1;
+        transform: none; /* Remove as transformações de rolagem */
+    }
+
+    .menu.active {
+        display: flex; /* Mostra o menu ao ativar */
+    }
+
+    /* Ícone de menu hambúrguer no mobile */
+    .menu-icon {
+        display: block; /* Mostra o ícone no mobile */
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        position: fixed; /* Fixa o ícone no topo */
+        right: 20px; /* Alinhado à direita */
+        top: 0px; /* Alinhado no topo */
+        z-index: 1001; /* Certifique-se de que está acima da logo */
+    }
+
+    /* Transforma o ícone de hambúrguer em "X" ao abrir o menu */
+    .menu-icon.open {
+        transform: rotate(45deg); /* Rotação para dar o efeito de 'X' */
+        color: #ff4b5c; /* Cor do 'X' */
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 30px; /* Espaço interno nas laterais */
+    }
+
+    .menu ul li a {
+        font-size: 20px;
+        padding: 30px; /* Espaçamento vertical entre os links */
+    }
+}

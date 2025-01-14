@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- -- >
+    site modelo do cliente.
+    https://www.shiftmc.com.br/index 
+    <!- - -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VIPPAX - Transporte Executivo de Luxo</title>
+    
+    <!-- -->
+    <link rel="stylesheet" href="frontend/css/styles.css">
+    <!-- -->
+    <link rel="stylesheet" href="frontend/css/components/menu.css">
+    <link rel="stylesheet" href="frontend/css/components/menuResponsive.css">
+    <!-- -->
+    <!-- -->
+    <link rel="stylesheet" href="frontend/css/components/heros.css">
+        <link rel="stylesheet" href="frontend/css/components/forms.css">
+    <!-- -->
+    <link rel="stylesheet" href="frontend/css/pages/services.css">
+    <link rel="stylesheet" href="frontend/css/pages/fleet.css">
+    <link rel="stylesheet" href="frontend/css/pages/about.css">
+    <link rel="stylesheet" href="frontend/css/pages/blog.css">
+    <link rel="stylesheet" href="frontend/css/pages/contact.css">
+    <link rel="stylesheet" href="frontend/css/components/footer.css">
+
+
+
+
+</head>
+<body>
+    <!-- Faixa preta com logo VIPPAX sempre visível -->
+
+    <header class="logo">
+        <img src="frontend/assets/images/logo.jpg" alt="VIPPAX">
+        <div class="menu-icon">&#9776;</div> 
+
+    </header>
+
+
+    <!-- Menu inicialmente invisível -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#frota">Frota</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <!-- Imagem à esquerda com o texto sobreposto na parte inferior -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h2>Qualidade, conforto e pontualidade em seus translados executivos</h2>
+            <p>Traslados para aeroportos e eventos em São Paulo</p>
+        </div>
+    </div>
+
+    <!-- Formulário à direita -->
+    <div class="hero-form">
+
+        <form id="agendamento-form" action="/reserva" method="POST">
+            <h3>Faça sua Reserva Agora</h3>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" value="Pedro" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" value="123456789" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" value="pedroivanpimenta@hotmail.com" required>
+            
+            <label for="origem">Origem:</label>
+            <input type="text" id="origem" name="origem" value="São Paulo" required>
+            
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" value="Rio de Janeiro" required>
+            
+            <label for="data">Data do Serviço:</label>
+            <input type="date" id="data" name="data" value="2024-12-31" required>
+            
+            <label for="hora">Hora do Serviço:</label>
+            <input type="time" id="hora" name="hora" value="14:00" required>
+            <div class="checkbox-termos">
+                <input type="checkbox" id="aceite-termos" required>
+                <label for="aceite-termos">Eu aceito os termos e condições.</label>
+            </div>
+
+            
+            <button type="submit">Reservar Agora</button>
+        </form>
+
+</div>
+
+    </div>
+</section>
+
+<!-- Serviços Section -->
+<section id="servicos" class="services">
+    <h2>Nossos Serviços</h2>
+    <div class="service-list">
+        <div class="service-item">
+            <h3>Traslado Aeroporto</h3>
+            <p>Transporte executivo para os aeroportos de Guarulhos e Congonhas.</p>
+        </div>
+        <div class="service-item">
+            <h3>Motorista Particular</h3>
+            <p>Serviço de motorista particular para rotinas ou eventos.</p>
+        </div>
+        <div class="service-item">
+            <h3>Pacotes por Hora ou Diária</h3>
+            <p>Serviços por horas ou pacotes diários para total conveniência.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Frota Section -->
+<section id="frota" class="fleet">
+    <h2>Nossa Frota</h2>
+    <p>Disponibilizamos um sedã de luxo para seus traslados.</p>
+    <img src="sedan-luxo.jpg" alt="Sedã de Luxo VIPPAX">
+</section>
+
+<!-- Sobre Section -->
+<section id="sobre" class="about">
+    <h2>Sobre a VIPPAX</h2>
+    <p>A VIPPAX oferece serviços de transporte executivo de luxo, com foco em conforto, segurança e pontualidade.</p>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="blog">
+    <h2>Novidades e Dicas</h2>
+    <article class="blog-post">
+        <h3>Dicas para Transporte Seguro em São Paulo</h3>
+        <p>Conheça as melhores práticas de segurança em traslados executivos.</p>
+        <a href="#">Leia mais</a>
+    </article>
+</section>
+
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 VIPPAX - Todos os Direitos Reservados.</p>
+    <div class="social-media">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+    </div>
+</footer>
+
+<!-- Importando o JavaScript -->
+<script src="frontend/js/components/menu.js"></script>
+<script src="frontend/js/components/menuSmoothScrollFixedTime.js"></script>
+<!-- -->
+<script src="frontend/js/components/emailFormHandler.js"></script>
+<!-- -->
+<!-- -->
+<script src="frontend/js/components/whatsappFormHandler.js"></script>
+<!-- -->
+
+</body>
+</html>

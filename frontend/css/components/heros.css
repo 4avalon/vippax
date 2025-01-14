@@ -1,0 +1,125 @@
+/* ============================ */
+/*         Seção Home (Hero)     */
+/* ============================ */
+
+.hero {
+    display: flex;
+    justify-content: space-between; /* Espaça o conteúdo (texto e formulário) horizontalmente */
+    align-items: flex-end; /* Alinha o conteúdo no final da seção (parte inferior) */
+    padding: 0 50px 50px 50px; /* Padding nas laterais e parte inferior, sem padding no topo */
+    background-color: #000; /* Fundo preto */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Altura de 90% da tela */
+    color: #f0f0f0;
+    position: relative;
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a área visível */
+    min-height: 80vh; /* Altura mínima para evitar espaços vazios */
+}
+
+/* Container da imagem */
+.hero-image {
+    position: relative;
+    flex: 1;
+    height: 100vh;
+    background-image: url('../../assets/images/driver.jpg');
+    background-size: cover;
+    background-position: calc(50% - 20px) calc(50% + 110px);
+    background-attachment: fixed; /* Parallax */
+    background-repeat: no-repeat;
+}
+
+/* Texto sobreposto à imagem */
+.hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Fundo preto com transparência */
+    color: #f0f0f0;
+    text-align: center;
+    transform: scale(1.00);
+    transition: transform 0.9s ease-in; /* Transição mais suave na saída */
+}
+.hero-text:hover {
+    transform: scale(1.005);
+    transition: transform 0.9s ease-in; /* Transição mais suave na saída */
+
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #f8f9fa;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+
+/* ============================ */
+/*     Responsividade (Mobile)   */
+/* ============================ */
+
+@media (max-width: 768px) {
+
+    /* Ajustes gerais da seção hero */
+    .hero {
+        flex-direction: column; /* Empilha o conteúdo verticalmente */
+        align-items: center; /* Centraliza o conteúdo no eixo vertical */
+        padding: 20px; /* Ajusta o padding para ser mais adequado ao mobile */
+        height: auto; /* Remove a altura fixa para telas menores */
+    }
+
+      /* Ajuste da imagem */
+    .hero-image {
+        flex: none;
+        height: 85vh;
+        background-image: url('../../assets/images/driver.jpg');
+        background-size: cover;
+        background-attachment: fixed; /* Parallax */
+        background-repeat: no-repeat;
+        background-position: -150px -23px;
+
+      
+    }
+
+
+
+    /* Texto da hero (ajuste de tamanho) */
+    .hero-text {
+        top: 30%;
+        position: relative; /* Torna o posicionamento relativo no mobile */
+        padding: 10px; /* Diminui o padding para telas menores */
+        text-align: center;
+        align-items: center;
+        background: none; /* Remove o fundo escuro no mobile para melhorar a leitura */
+        color: #f8f9fa;
+    }
+
+    .hero-text h2 {
+        font-size: 28px; /* Reduz o tamanho do título no mobile */
+        margin-bottom: 8px;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 1); /* Sombra escura ao redor do texto */
+        line-height: 2; /* Ajusta o espaçamento entre as linhas de texto */
+
+
+    }
+
+
+
+    .hero-text p {        
+        margin-bottom: 8px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); /* Sombra escura ao redor do texto */
+        background-color: rgba(0, 0, 0, 0.4);
+        font-size: 20px; /* Reduz o tamanho do parágrafo no mobile */
+        border-radius: 2%;
+        line-height: 1.5; /* Ajusta o espaçamento entre as linhas de texto */
+    }
+
+
+}

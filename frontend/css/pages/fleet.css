@@ -1,0 +1,23 @@
+/* Fleet Section */
+.fleet {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center; /* Alinha horizontalmente */
+    min-height: 50vh; /* Define a altura da seção como a altura da tela */
+    background-color: #000; /* Mantém o fundo preto */
+    text-align: center;
+}
+
+.fleet h2 {
+    color: #f0f0f0;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.fleet img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

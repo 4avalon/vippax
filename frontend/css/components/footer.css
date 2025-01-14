@@ -1,0 +1,56 @@
+/* ========================== */
+/*       Rodapé do Site        */
+/* ========================== */
+
+/* Footer */
+footer {
+    background-color: #000; /* Mantém o fundo preto */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Texto branco */
+    min-height: 13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinha verticalmente */
+    align-items: center; /* Alinha horizontalmente */
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 16px; /* Tamanho de fonte confortável */
+}
+
+footer .social-media {
+    margin-top: 15px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: #007bff; /* Muda a cor no hover */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    footer {
+        padding: 40px; /* Reduz o padding nas laterais no mobile */
+        text-align: center; /* Garante centralização no mobile */
+    }
+
+    footer p {
+        font-size: 14px; /* Reduz um pouco o tamanho do texto no mobile */
+        background-color: #111;
+    }
+
+    footer .social-media a {
+        margin: 0 5px; /* Ajusta espaçamento entre ícones de mídia social */
+        color: #007bff;
+    }
+    footer .social-media a:focus {
+    color: #007bff;
+    }
+}

@@ -1,0 +1,18 @@
+/* Reseta os padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 18px; /* Ou o tamanho que preferir */
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #f0f0f0; /* Texto claro */
+    line-height: 1.6;
+}
+/* Espaço abaixo da logo para evitar sobreposição do conteúdo */
